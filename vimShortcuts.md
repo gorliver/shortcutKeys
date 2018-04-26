@@ -12,10 +12,13 @@ j             move cursor to down
 ```
 ctrl-u        half-page up
 ctrl-d        half-page down
-H             move to first line
+H             move to first line on current page
 M             move to middle of current page
-L             move to last line
+L             move to last line on current page
 zz            center current line
+gg            move to the head of the file
+G             move to the tail of the file
+%             jump between {},()... 
 ```
 
 ```
@@ -38,14 +41,19 @@ t,T+char      jump forward/backward to next char, cursor will be before the char
 x             delete one character
 dw, d5w       delete forward to the end of the (5) word(s)
 diw           delete current word
+di(           delete the context within the block (defined by (),{}, [],"" ...)
+ci(           delete the context within the block (defined by (),{}, [],"" ...) and then enter insert mode
 db,d5b        delete backward to the head of the (5) word(s)
 d$            delete to the end of the line
 d^            delete to the head of the line
 ```
 ### yank and paste
 ```
+v             start visual mode
+V             start visual mode line-wise
+ctrl-v        start visual mode block-wise
 yy            yank current line
-va}+y         select current block(defined by {}) and yank
+va}y          select current block(defined by {}) and yank
 y$            yank to the end of the line
 yw            yank to the end of the word
 p             paste
@@ -55,6 +63,7 @@ P             paste above current line
 ```
 a             insert after (append)
 i             insert
+c             change (delete then enter edit mode)
 r             replace
 u             undo
 J             merge next line to current line
