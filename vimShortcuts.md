@@ -25,6 +25,7 @@ w, 5w         move cursor to right(5) word(s)
 b, 5b         move cursor to left(5) word(s)
 e, 5e         move cursor to the end of right(5) word(s)
 {,}           jump backward/forward one paragraph
+[{, ]}        jump to { or } when cursor in a code block (defined by {}) 
 f,F+char      jump forward/backward to next char, cursor will be on the char
 t,T+char      jump forward/backward to next char, cursor will be before the char
 ''            return to the line where the cursor was before the latest jump
@@ -44,7 +45,7 @@ d^            delete to the head of the line
 ### yank and paste
 ```
 yy            yank current line
-va}+y         select current block and yank
+va}+y         select current block(defined by {}) and yank
 y$            yank to the end of the line
 yw            yank to the end of the word
 p             paste
