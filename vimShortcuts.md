@@ -52,7 +52,7 @@ P             paste above current line
 ```
 ### Edit
 ```
-a             insert after
+a             insert after (append)
 i             insert
 r             replace
 u             undo
