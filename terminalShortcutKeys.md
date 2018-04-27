@@ -1,4 +1,4 @@
-# shortcut Keys terminal
+# shortcut Keys in terminal
 
 ## cursor movement
 ```
