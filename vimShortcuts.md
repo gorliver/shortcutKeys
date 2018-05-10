@@ -66,6 +66,7 @@ i             insert
 c             change (delete then enter edit mode)
 r             replace
 u             undo
+ctrl-r        redo
 J             merge next line to current line
 o             insert new line
 O             insert new line before current line
