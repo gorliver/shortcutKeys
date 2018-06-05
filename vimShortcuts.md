@@ -84,9 +84,13 @@ cgn           search next match and change it. This works nicely with `.`
 
 ### recording for repeat operation
 Hit `q` and `a-z` to start recording.
+
 Hit `q` again to stop recording.
+
 Hit `@` + `a-z` or `@@` to apply the recorded operation on current line.
+
 When recording, avoid use `hjkl`. Using `w`,`e`,`b`,`$` and `^` instead.
+
 
 ## file operation
 ```
