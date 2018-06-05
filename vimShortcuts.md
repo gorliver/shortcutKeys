@@ -74,7 +74,7 @@ O             insert new line before current line
 .             repeat last operation
 ```
 
-## search and replace
+### search and replace
 ```
 :/            search forward
 :?            search backward
