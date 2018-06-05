@@ -74,11 +74,6 @@ O             insert new line before current line
 .             repeat last operation
 ```
 
-## file operation
-```
-:e f.txt      open and edit f.txt
-:r f.txt      append f.txt to current file
-```
 ## search and replace
 ```
 :/            search forward
@@ -86,6 +81,13 @@ O             insert new line before current line
 :%s/p1/p2/g   replace p1 by p2
 cgn           search next match and change it. This works nicely with `.`
 ```
+
+## file operation
+```
+:e f.txt      open and edit f.txt
+:r f.txt      append f.txt to current file
+```
+
 ### recording for repeat operation
 Hit `q` and `a-z` to start recording.
 Hit `q` again to stop recording.
