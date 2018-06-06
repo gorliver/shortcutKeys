@@ -17,13 +17,15 @@ M             move to middle of current page
 L             move to last line on current page
 zz            center current line
 gg            move to the head of the file
+#G,#gg        goto # line
 G             move to the tail of the file
 %             jump between {},()... 
 ```
 
 ```
 $             move cursor to end of the line
-^             move cursor to head of the line
+^             move cursor to first non-blank character the line
+0             move cursor to start of the line
 w, 5w         move cursor to right(5) word(s)
 b, 5b         move cursor to left(5) word(s)
 e, 5e         move cursor to the end of right(5) word(s)
@@ -89,7 +91,7 @@ Hit `q` again to stop recording.
 
 Hit `@` + `a-z` or `@@` to apply the recorded operation on current line.
 
-When recording, avoid use `hjkl`. Using `w`,`e`,`b`,`$` and `^` instead.
+When recording, avoid use `hjkl` because each line is in different length. Using `w`,`e`,`b`,`$` and `^` instead.
 
 
 ## file operation
