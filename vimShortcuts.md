@@ -93,6 +93,7 @@ Hit `@` + `a-z` or `@@` to apply the recorded operation on current line.
 
 When recording, avoid use `hjkl` because each line is in different length. Using `w`,`e`,`b`,`$` and `^` instead.
 
+Use `:+10` or `:-10` to jump down/up 10 lines. Then hit `@:` to repeat previous operation. This works great with `@a`
 
 ## file operation
 ```
